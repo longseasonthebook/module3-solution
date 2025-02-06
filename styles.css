@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /* Navbar Styling */
@@ -29,6 +30,7 @@ body {
 
 .navbar-nav li {
     width: 100%;
+    text-align: center;
 }
 
 .navbar-nav li a {
@@ -50,6 +52,10 @@ header {
     text-align: center;
 }
 
+h1 {
+    margin: 20px 0;
+}
+
 /* Content Section */
 .content-section {
     background-color: #f8f9fa;
@@ -61,12 +67,11 @@ header {
 /* Boxes Styling */
 .box {
     background-color: #f8f9fa;
-    border: 2px solid #ddd;
-    border-radius: 10px;
     padding: 20px;
     margin: 15px 0;
+    border-radius: 10px;
     text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .box h2 {
@@ -111,29 +116,11 @@ header {
     .back-to-top {
         display: block;
     }
-
-    .navbar-nav {
-        width: 100%;
-        text-align: center;
-        background-color: #007bff;
-        /* Blue Background */
-    }
-    
-    .navbar-nav li {
-        display: block;
-    }
-    
-    .navbar-nav li a {
-        color: white;
-        padding: 15px;
-    }
 }
 
 /* Extra Small Screens (Stack All Boxes) */
 @media (max-width: 480px) {
-
-    .box-container .col-xs-6,
-    .box-container .col-xs-12 {
+    box-container .col-xs-6 {
         width: 100%;
     }
 }
