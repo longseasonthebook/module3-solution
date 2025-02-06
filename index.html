@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,15 +18,15 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar">Sushi</span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">Food, LLC</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav visible-xs">
-                    <li><a href="#">Chicken</a></li>
-                    <li><a href="#">Beef</a></li>
-                    <li><a href="#">Sushi</a></li>
+                    <li><a href="#chicken">Chicken</a></li>
+                    <li><a href="#beef">Beef</a></li>
+                    <li><a href="#sushi">Sushi</a></li>
                 </ul>
             </div>
         </div>
@@ -36,78 +37,46 @@
         <h1>Our Menu</h1>
     </header>
 
-    <!-- Tall Section -->
+    <!-- Content Section -->
     <section class="content-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel enim blandit, maximus turpis sit amet, ultricies
-                    sapien. Integer mollis lorem nec eros dapibus imperdiet. Maecenas vitae purus auctor, fringilla orci a, maximus ex.
-                    Proin cursus urna porta massa rhoncus, ut porta est rutrum. Maecenas at varius dolor. In vestibulum consectetur mauris
-                    eu vehicula. Phasellus ut velit vitae nisi accumsan aliquam nec vel urna. Integer porta egestas metus, non tincidunt
-                    elit rutrum vel.
-                    
-                    Sed quis nisl arcu. Nam fermentum turpis vel sem accumsan varius. Integer consequat, sapien eget maximus lobortis, justo
-                    elit ullamcorper lectus, eget gravida diam diam suscipit enim. Donec finibus maximus elit quis vulputate. Orci varius
-                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla nec ante arcu. Aliquam lobortis ante
-                    sed nisl tincidunt, ac dictum enim venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="row box-container">
+                <div class="col-md-4 col-xs-6">
+                    <div class="box" id="chicken">
+                        <h2>Chicken</h2>
+                        <p>Delicious grilled and fried chicken selections.</p>
+                        <button class="btn btn-primary back-to-top">Back to Top</button>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel enim blandit, maximus turpis sit amet,
-                        ultricies
-                        sapien. Integer mollis lorem nec eros dapibus imperdiet. Maecenas vitae purus auctor, fringilla orci a,
-                        maximus ex.
-                        Proin cursus urna porta massa rhoncus, ut porta est rutrum. Maecenas at varius dolor. In vestibulum
-                        consectetur mauris
-                        eu vehicula. Phasellus ut velit vitae nisi accumsan aliquam nec vel urna. Integer porta egestas metus,
-                        non tincidunt
-                        elit rutrum vel.
-        
-                        Sed quis nisl arcu. Nam fermentum turpis vel sem accumsan varius. Integer consequat, sapien eget maximus
-                        lobortis, justo
-                        elit ullamcorper lectus, eget gravida diam diam suscipit enim. Donec finibus maximus elit quis
-                        vulputate. Orci varius
-                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla nec ante arcu. Aliquam
-                        lobortis ante
-                        sed nisl tincidunt, ac dictum enim venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                <div class="col-md-4 col-xs-6">
+                    <div class="box" id="beef">
+                        <h2>Beef</h2>
+                        <p>Juicy steaks and beef dishes cooked to perfection.</p>
+                        <button class="btn btn-primary back-to-top">Back to Top</button>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
                 <div class="col-md-4 col-xs-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel enim blandit, maximus turpis sit amet,
-                        ultricies
-                        sapien. Integer mollis lorem nec eros dapibus imperdiet. Maecenas vitae purus auctor, fringilla orci a,
-                        maximus ex.
-                        Proin cursus urna porta massa rhoncus, ut porta est rutrum. Maecenas at varius dolor. In vestibulum
-                        consectetur mauris
-                        eu vehicula. Phasellus ut velit vitae nisi accumsan aliquam nec vel urna. Integer porta egestas metus,
-                        non tincidunt
-                        elit rutrum vel.
-        
-                        Sed quis nisl arcu. Nam fermentum turpis vel sem accumsan varius. Integer consequat, sapien eget maximus
-                        lobortis, justo
-                        elit ullamcorper lectus, eget gravida diam diam suscipit enim. Donec finibus maximus elit quis
-                        vulputate. Orci varius
-                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla nec ante arcu. Aliquam
-                        lobortis ante
-                        sed nisl tincidunt, ac dictum enim venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                    <div class="box" id="sushi">
+                        <h2>Sushi</h2>
+                        <p>Fresh sushi rolls with the finest ingredients.</p>
+                        <button class="btn btn-primary back-to-top">Back to Top</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // Smooth Scroll to Top
+        $(".back-to-top").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+    </script>
+
 </body>
 
 </html>
